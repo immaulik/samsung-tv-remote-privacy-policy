@@ -73,6 +73,38 @@ body {
   opacity: 0.8;
 }
 
+/* Nav */
+.nav {
+  margin-top: 26px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.15s ease;
+}
+
+.nav a:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.nav a.active {
+  background: #fff;
+  color: var(--primary);
+  border-color: #fff;
+}
+
 /* Content */
 .content {
   background: var(--surface);
